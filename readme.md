@@ -23,14 +23,16 @@ Bonus:
    3. using hotizontal autoscale to scale more replicas when needed
 2. What loads would this spinup be able to handle. 
    1. The chart for individual nginx server can handle see below. original doc https://www.nginx.com/blog/testing-the-performance-of-nginx-and-nginx-plus-web-servers/
-  | CPUs	| 0 KB	| 1 KB	| 10 KB	| 100 KB |
-  | 1	| 71,561	| 40,207	| 23,308	| 4,830 |
-  | 2	| 151,325	| 85,139	| 48,654	| 9,871 |
-  | 4	| 324,654	| 178,395	| 96,808	| 19,355 |
-  | 8	| 647,213	| 359,576	| 198,818	| 38,900 |
-  | 16	| 1,262,999	| 690,329	| 383,860	| 77,427 |
-  | 32	| 2,197,336	| 1,207,959	| 692,804	| 90,430 |
-  | 36	| 2,175,945	| 1,239,624	| 733,745	| 89,842 |
+  
+      | CPUs	| 0 KB	| 1 KB	| 10 KB	| 100 KB |
+      |-------|-------|-------|-------|--------|
+      | 1	    | 71,561| 40,207| 23,308| 4,830  |
+      | 2	| 151,325	| 85,139	| 48,654	| 9,871 |
+      | 4	| 324,654	| 178,395	| 96,808	| 19,355 |
+      | 8	| 647,213	| 359,576	| 198,818	| 38,900 |
+      | 16	| 1,262,999	| 690,329	| 383,860	| 77,427 |
+      | 32	| 2,197,336	| 1,207,959	| 692,804	| 90,430 |
+      | 36	| 2,175,945	| 1,239,624	| 733,745	| 89,842 |
 
     2. The resources can be set in deployment.yaml file 
    
